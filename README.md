@@ -68,7 +68,7 @@ cordova plugin add cordova-plugin-fingerprint-aio-criterion@rc
 Get the latest development version. *Not recommended!*
 
 ```
-cordova plugin add https://github.com/NiklasMerz/cordova-plugin-fingerprint-aio-criterion.git
+cordova plugin add https://github.com/AndrewIl/cordova-plugin-fingerprint-aio-criterion.git
 ```
 
 ### Check if fingerprint authentication is available

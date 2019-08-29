@@ -47,13 +47,13 @@
 **Install from NPM**
 
 ```
-cordova plugin add cordova-plugin-fingerprint-aio --save
+cordova plugin add cordova-plugin-fingerprint-aio-criterion --save
 ```
 
 If you want to set a FaceID description use:
 
 ```
-cordova plugin add cordova-plugin-fingerprint-aio --variable FACEID_USAGE_DESCRIPTION="Login now...."
+cordova plugin add cordova-plugin-fingerprint-aio-criterion --variable FACEID_USAGE_DESCRIPTION="Login now...."
 ```
 
 **Use the release candidate for testing the latest fixes**
@@ -61,7 +61,7 @@ cordova plugin add cordova-plugin-fingerprint-aio --variable FACEID_USAGE_DESCRI
 You can use preview versions with the `rc` tag on npm.
 
 ```
-cordova plugin add cordova-plugin-fingerprint-aio@rc
+cordova plugin add cordova-plugin-fingerprint-aio-criterion@rc
 ```
 
 **Use this Github repo**
@@ -69,7 +69,7 @@ cordova plugin add cordova-plugin-fingerprint-aio@rc
 Get the latest development version. *Not recommended!*
 
 ```
-cordova plugin add https://github.com/NiklasMerz/cordova-plugin-fingerprint-aio.git
+cordova plugin add https://github.com/NiklasMerz/cordova-plugin-fingerprint-aio-criterion.git
 ```
 
 ### Check if fingerprint authentication is available

@@ -79,7 +79,7 @@ import LocalAuthentication
 
     @available(iOS 11.0, *)
     @objc(authenticate:)
-    func authenticate(_ command: CDVInvokedUrlCommand){
+    func authenticate(_ command_: CDVInvokedUrlCommand){
         let authenticationContext = LAContext();
         var errorResponse: [AnyHashable: Any] = [
             "message": "Something went wrong"
@@ -87,7 +87,7 @@ import LocalAuthentication
         var pluginResult = CDVPluginResult(status: CDVCommandStatus_ERROR, messageAs: errorResponse);
         var reason = "Authentication";
         var policy:LAPolicy = .deviceOwnerAuthentication;
-        let data  = command.arguments[0] as AnyObject?;
+        let data  = command_.arguments[0] as AnyObject?;
 
         if let disableBackup = data?["disableBackup"] as! Bool? {
             if disableBackup {
@@ -134,7 +134,7 @@ import LocalAuthentication
                         pluginResult = CDVPluginResult(status: CDVCommandStatus_ERROR, messageAs: errorResult);
                     }
                 }
-                self.commandDelegate.send(pluginResult, callbackId:command.callbackId);
+                self.commandDelegate.send(pluginResult, callbackId:command_.callbackId);
             }
         );
     }

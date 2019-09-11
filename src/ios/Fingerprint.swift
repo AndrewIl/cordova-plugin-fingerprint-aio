@@ -2,7 +2,7 @@ import Foundation
 import LocalAuthentication
 
 
-@available
+@available(iOS 11.0, *)
 @objc(Fingerprint) class Fingerprint : CDVPlugin {
 
     enum PluginError:Int {
@@ -77,7 +77,7 @@ import LocalAuthentication
     }
 
 
-    @available
+    @available(iOS 11.0, *)
     @objc(authenticate:)
     func authenticate(_ command: CDVInvokedUrlCommand){
         let authenticationContext = LAContext();
